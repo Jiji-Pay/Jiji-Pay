@@ -1,17 +1,52 @@
-<form id="paymentForm">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jiji Pay</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<input type="text" placeholder="Nom du vendeur" required>
+<header class="header">
+  <h1>🟢 Jiji Pay</h1>
+  <p>Votre argent est protégé jusqu'à réception de votre colis.</p>
+</header>
 
-<input type="text" placeholder="Nom de l'article" required>
+<div class="container">
+  <div class="card">
+    <h2>100% Sécurisé</h2>
+    <p>✔ Votre argent est conservé jusqu'à la confirmation de réception.</p>
+  </div>
 
-<input type="number" placeholder="Prix de l'article (FCFA)" required>
+  <div class="card">
+    <h2>Comment ça marche ?</h2>
+    <div class="step"><b>1. Commandez</b><br>Remplissez le formulaire.</div>
+    <div class="step"><b>2. Sécurisé</b><br>Jiji Pay garde votre argent.</div>
+    <div class="step"><b>3. Confirmez</b><br>Colis reçu → vendeur payé.</div>
+  </div>
 
-<input type="text" placeholder="Votre nom" required>
+  <div class="card">
+    <h2>Votre commande</h2>
 
-<input type="tel" placeholder="Votre téléphone" required>
+    <form id="paymentForm">
+      <input type="text" placeholder="Nom du vendeur" required>
+      <input type="text" placeholder="Nom de l'article" required>
+      <input type="number" placeholder="Prix de l'article (FCFA)" required>
+      <input type="text" placeholder="Votre nom" required>
+      <input type="tel" placeholder="Votre téléphone" required>
 
-<button type="button" class="pay" onclick="payer()">
-Passer la commande sécurisée
-</button>
+      <button type="button" class="pay" onclick="payerWave()">
+        Passer la commande sécurisée
+      </button>
+    </form>
 
-</form>
+    <button class="cancel">Annuler la commande</button>
+  </div>
+</div>
+
+<footer>Garantie Jiji Pay</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
